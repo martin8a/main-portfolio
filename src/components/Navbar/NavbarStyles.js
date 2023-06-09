@@ -1,6 +1,11 @@
 import { styled } from 'styled-components';
 import { COLORS, FONTS } from '../../assets/resources/resources';
 
+export const NavbarPosition = styled('div')(() => ({
+  position: 'fixed',
+  width: '100%',
+}));
+
 export const NavbarWrapper = styled('div')(() => ({
   display: 'flex',
   padding: '0 20px',
@@ -38,5 +43,12 @@ export const LogoLetter = styled('h3')(() => ({
 export const NavbarMenu = styled('div')(() => ({
   display: 'flex',
   justifyContent: 'space-between',
-  columnGap: 25,
+  columnGap: 35,
+  alignItems: 'center',
+}));
+
+export const LinkNav = styled('a')(() => ({
+  textDecoration: 'none',
+  color: COLORS.bodyText,
+  fontSize: 15,
 }));
